@@ -10,13 +10,13 @@ function customize {
 	fi
 
 #	id
-	cp -R /tmp/.ssh/* /root/.ssh/
+	cp -R /tmp/.ssh/* /home/ubuntu/.ssh/
 #	ls -ltr /tmp/.ssh
-#	ls -ltr /root/.ssh
-	chmod 700 /root/.ssh
-	chmod 644 /root/.ssh/id_rsa.pub
-	chmod 600 /root/.ssh/id_rsa
-	chmod 600 /root/.ssh/authorized_keys
+#	ls -ltr /home/ubuntu/.ssh
+	chmod 700 /home/ubuntu/.ssh
+	chmod 644 /home/ubuntu/.ssh/id_rsa.pub
+	chmod 600 /home/ubuntu/.ssh/id_rsa
+	chmod 600 /home/ubuntu/.ssh/authorized_keys
 
 	su barman -c "cp -R /tmp/.ssh/* /var/lib/barman/.ssh/ && chmod 700 /var/lib/barman/.ssh && chmod 644 /var/lib/barman/.ssh/id_rsa.pub && chmod 600 /var/lib/barman/.ssh/id_rsa && chmod 600 /var/lib/barman/.ssh/authorized_keys"
 

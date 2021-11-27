@@ -9,10 +9,10 @@ services:
     - "322:22"
     volumes:
       - type: bind
-        source: /root/incremental_backup_restore_demo/postgresdatabase/db_remote/data
+        source: /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db_remote/data
         target: /var/lib/postgresql/data
       - type: bind
-        source: /root/incremental_backup_restore_demo/postgresdatabase/db_remote/sshkeys
+        source: /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db_remote/sshkeys
         target: /tmp/.ssh
     command:
       - "postgres"
@@ -47,16 +47,16 @@ services:
     - "422:22"
     volumes:
       - type: bind
-        source: /root/incremental_backup_restore_demo/pgbarman_remote/backupcfg
+        source: /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/backupcfg
         target: /etc/barman.d
       - type: bind
-        source: /root/incremental_backup_restore_demo/pgbarman_remote/backups
+        source: /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/backups
         target: /backup/barman
       - type: bind
-        source: /root/incremental_backup_restore_demo/pgbarman_remote/log
+        source: /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/log
         target: /var/log/barman
       - type: bind
-        source: /root/incremental_backup_restore_demo/pgbarman_remote/sshkeys
+        source: /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/sshkeys
         target: /tmp/.ssh
     logging:
       driver: "json-file"
