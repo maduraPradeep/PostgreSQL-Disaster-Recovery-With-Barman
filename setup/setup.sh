@@ -55,8 +55,8 @@ ssh-keygen -f /home/ubuntu/.ssh/id_rsa -y >> /home/ubuntu/incremental_backup_res
 ssh-keygen -f /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/dcm_db_remote/sshkeys/id_rsa -y >> /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/sshkeys/authorized_keys
 ssh-keygen -f /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/sshkeys/id_rsa -y >> /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/dcm_db_remote/sshkeys/authorized_keys
 
-chmod -R 777 /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/sshkeys/*
-chmod -R 777 /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/dcm_db_remote/sshkeys/*
+# chmod -R 777 /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/sshkeys/*
+# chmod -R 777 /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/dcm_db_remote/sshkeys/*
 
 cp /home/ubuntu/incremental_backup_restore_demo/pgbarman/backupcfg/postgres-source-db.conf /home/ubuntu/incremental_backup_restore_demo/pgbarman_remote/backupcfg/.
 
