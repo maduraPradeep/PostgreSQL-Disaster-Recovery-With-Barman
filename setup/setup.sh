@@ -8,6 +8,8 @@ mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase
 mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db
 mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db/sshkeys
 mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db/data
+mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/dcm_db_remote
+
 
 mkdir /home/ubuntu/incremental_backup_restore_demo/pgbarman/
 mkdir /home/ubuntu/incremental_backup_restore_demo/pgbarman/sshkeys
