@@ -2,6 +2,8 @@
 
 # Local end setup..
 mkdir /home/ubuntu/incremental_backup_restore_demo
+mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase
+
 
 mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db
 mkdir /home/ubuntu/incremental_backup_restore_demo/postgresdatabase/db/sshkeys
